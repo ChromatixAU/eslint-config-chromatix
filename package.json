@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-chromatix",
+  "name": "@chromatix/eslint-config-chromatix",
   "version": "0.0.1",
   "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "main": "index.js",

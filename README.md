@@ -4,7 +4,7 @@ Shareable config for ESLint for custom standards at [Chromatix Digital Agency](h
 
 ## Installation
 
-    npm install --save-dev eslint-config-chromatix
+    npm install --save-dev @chromatix/eslint-config-chromatix
 
 ## Usage
 
@@ -12,7 +12,7 @@ Add this to your `.eslintrc.js` file:
 
     module.exports = {
       "extends": [
-        "chromatix"
+        "@chromatix/chromatix"
       ]
     };
 
