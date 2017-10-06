@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChromatixAU/eslint-config-chromatix.git"
