@@ -1,151 +1,241 @@
 'use strict';
 
+const INDENTATION_SPACES = 2;
+
 module.exports = {
 
-  // @see https://eslint.org/docs/rules/
-  // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
-  // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
-  "extends": [
-    "eslint:recommended",
-    "wordpress"
-  ],
-
-  "env": {
-    "browser": true,
-    "node":    true,
-    //"es6":   true, // Coming soon.
-    //"jest":  true, // Coming soon.
-    "jquery":  true
+  env: {
+    browser: true,
+    es6:     true,
+    jest:    true,
+    jquery:  true,
+    node:    true
   },
 
-  "rules": {
+  // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
+  // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
+  // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
+  extends: [
+    'eslint:recommended',
+    'wordpress'
+  ],
+
+  rules: {
 
     // Coming soon.
     //
-    //"no-var":       [ "error" ],
-    //"prefer-const": [ "error" ],
+    //'no-var':       [ 'error' ],
+    //'prefer-const': [ 'error' ],
     //
     // @see https://www.npmjs.com/package/eslint-plugin-dollar-sign
-    //"dollar-sign/dollar-sign": [2, "ignoreProperties"],
+    //'dollar-sign/dollar-sign': [2, 'ignoreProperties'],
 
-    // Best practices and quality code.
-    "complexity":            [ "error", 20 ],
-    "eqeqeq":                [ "error", "always" ],
-    "guard-for-in":          [ "error" ],
-    "max-depth":             [ "error",  3 ],
-    "max-nested-callbacks":  [ "error",  3 ],
-    "max-params":            [ "error",  3 ],
-    "max-statements":        [ "error", 15 ],
-    "no-loop-func":          [ "error" ],
-    "no-eq-null":            [ "error" ],
-    "no-implicit-coercion":  [ "error" ],
-    "no-magic-numbers":      [ "error" ],
-    "no-param-reassign":     [ "error" ],
-    "no-plusplus":           [ "error" ],
-    "no-return-assign":      [ "error" ],
-    "no-self-compare":       [ "error" ],
-    "no-unused-expressions": [ "error" ],
-    "strict":                [ "error", "safe" ],
+    // Rule categories:
+    // - Best practices (and quality code).
+    // - Documentation.
+    // - Indentation.
+    // - Handled elsewhere.
+    // - Node safety.
+    // - Purely helpful.
+    // - Security.
+    // - Stylistic.
+    // - UX.
+    // - Variables.
 
-    // Security.
-    "no-eval":         [ "error" ],
-    "no-implied-eval": [ "error" ],
+    'array-bracket-newline': [ // Stylistic.
+      'error',
+      {
+        minItems: 2
+      }
+    ],
 
-    // Purely helpful.
-    "array-callback-return": [ "warn" ],
+    'array-callback-return': [ 'warn' ], // Purely helpful.
 
-    // UX.
-    "no-alert": [ "error" ],
+    'array-element-newline': [ // Stylistic.
+      'error',
+      'always'
+    ],
 
-    // Node.js safety.
-    "callback-return":       [ "error" ],
-    "handle-callback-err":   [ "error" ],
-    "no-buffer-constructor": [ "error" ],
-    "no-mixed-requires":     [ "error" ],
-    "no-path-concat":        [ "error" ],
-    "no-process-env":        [ "error" ],
-    "no-process-exit":       [ "error" ],
+    'callback-return': [ 'error' ], // Node safety.
+
+    'capitalized-comments': [ // Documentation.
+      'warn',
+      'always',
+      {
+        ignoreConsecutiveComments: true
+      }
+    ],
+
+    'complexity': [ // Best practices.
+      'error',
+      {
+        max: 20
+      }
+    ],
+
+    'dot-location': [ // Stylistic.
+      'error',
+      'property'
+    ],
+
+    'eqeqeq': [ // Best practices.
+      'error',
+      'always'
+    ],
+
+    'guard-for-in':        [ 'error' ], // Best practices.
+    'handle-callback-err': [ 'error' ], // Node safety.
+
+    'id-length': [ // Variables.
+      'error',
+      {
+        max: 25,
+        min: 2
+      }
+    ],
 
     // Indentation.
-    "indent": [
-      "error",
-      2,
+    // @see https://eslint.org/docs/rules/indent
+    'indent': [
+      'error',
+      INDENTATION_SPACES,
       {
-        "SwitchCase":             1,
-        "VariableDeclarator":     { "var": 2, "let": 2, "const": 3 },
-        "flatTernaryExpressions": true
-      }
-    ],
+        flatTernaryExpressions: true,
+        SwitchCase:             1,
 
-    // Commenting.
-    "no-warning-comments":  [ "warn" ],
-    "require-jsdoc":        [ "warn" ],
-    "valid-jsdoc":          [ "warn" ],
-    "capitalized-comments": [
-      "warn",
-      "always",
-      {
-        "ignoreConsecutiveComments": true
-      }
-    ],
-    "lines-around-comment": [
-      "warn",
-      {
-        "beforeBlockComment": true,
-        "beforeLineComment":  true
-      }
-    ],
-
-    // Stylistic.
-    "array-bracket-newline":   [ "error", { "minItems": 2 } ],
-    "array-element-newline":   [ "error", "always" ],
-    "dot-location":            [ "error", "property" ],
-    "max-len":                 [ "error", 100 ],
-    "max-lines":               [ "error", 800 ],
-    "max-statements-per-line": [ "error" ],
-    "no-array-constructor":    [ "error" ],
-    "no-empty-function":       [ "error" ],
-    "no-lone-blocks":          [ "error" ],
-    "no-lonely-if":            [ "error" ],
-    "no-multi-spaces":         [ "error" ],
-    "no-multi-str":            [ "error" ],
-    "no-negated-condition":    [ "error" ],
-    "no-new-object":           [ "error" ],
-    "no-tabs":                 [ "error" ],
-    "object-property-newline": [ "error" ],
-    "sort-keys":               [ "error" ],
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxEOF": 1,
-        "maxBOF": 1
-      }
-    ],
-    "key-spacing": [
-      "error",
-      {
-        "align": {
-          "beforeColon": false,
-          "afterColon":  true,
-          "on":          "value"
+        VariableDeclarator: {
+          const: 3,
+          let:   2,
+          var:   2
         }
       }
     ],
 
-    // Variables.
-    "no-use-before-define": [ "error" ],
-    "id-length":            [
-      "error",
+    'key-spacing': [ // Stylistic.
+      'error',
       {
-        "min":  2,
-        "max": 20
+        'align': {
+          afterColon:  true,
+          beforeColon: false,
+          on:          'value'
+        }
       }
     ],
 
-    // Handled elsewhere.
-    "linebreak-style": [ "off" ], // Handled by git.
-    "no-console":      [ "off" ]  // Handled by strip-debug during minification for production.
+    'linebreak-style': [ 'off' ], // Handled by git.
+
+    'lines-around-comment': [ // Documentation.
+      'warn',
+      {
+        beforeBlockComment: true,
+        beforeLineComment:  true
+      }
+    ],
+
+    'max-depth': [ // Best practices.
+      'error',
+      {
+        max: 3
+      }
+    ],
+
+    'max-len': [ // Stylistic.
+      'error',
+      {
+        code:       100,
+        ignoreUrls: true,
+        tabWidth:   2
+      }
+    ],
+
+    'max-lines': [ // Stylistic.
+      'error',
+      {
+        max:            800,
+        skipBlankLines: false,
+        skipComments:   false
+      }
+    ],
+
+    'max-nested-callbacks': [ // Best practices.
+      'error',
+      {
+        max: 3
+      }
+    ],
+
+    'max-params': [ // Best practices.
+      'error',
+      {
+        max: 3
+      }
+    ],
+
+    'max-statements': [ // Best practices.
+      'error',
+      {
+        max: 15
+      }
+    ],
+
+    'max-statements-per-line': [ 'error' ], // Stylistic.
+
+    'no-alert':              [ 'error' ], // UX.
+    'no-array-constructor':  [ 'error' ], // Stylistic.
+    'no-buffer-constructor': [ 'error' ], // Node safety.
+    'no-console':            [ 'off' ], // Handled by strip-debug during minify for prod.
+    'no-empty-function':     [ 'error' ], // Stylistic.
+    'no-eq-null':            [ 'error' ], // Best practices.
+    'no-eval':               [ 'error' ], // Security.
+    'no-implicit-coercion':  [ 'error' ], // Best practices.
+    'no-implied-eval':       [ 'error' ], // Security.
+    'no-lone-blocks':        [ 'error' ], // Stylistic.
+    'no-lonely-if':          [ 'error' ], // Stylistic.
+    'no-loop-func':          [ 'error' ], // Best practices.
+    'no-magic-numbers':      [ 'error' ], // Best practices.
+    'no-mixed-requires':     [ 'error' ], // Node safety.
+    'no-multi-spaces':       [ 'error' ], // Stylistic.
+    'no-multi-str':          [ 'error' ], // Stylistic.
+
+    'no-multiple-empty-lines': [ // Stylistic.
+      'error',
+      {
+        max:    1,
+        maxBOF: 1,
+        maxEOF: 1
+      }
+    ],
+    'no-negated-condition':    [ 'error' ], // Stylistic.
+    'no-new-object':           [ 'error' ], // Stylistic.
+    'no-param-reassign':       [ 'error' ], // Best practices.
+    'no-path-concat':          [ 'error' ], // Node safety.
+    'no-plusplus':             [ 'error' ], // Best practices.
+    'no-process-env':          [ 'error' ], // Node safety.
+    'no-process-exit':         [ 'error' ], // Node safety.
+    'no-return-assign':        [ 'error' ], // Best practices.
+    'no-self-compare':         [ 'error' ], // Best practices.
+    'no-tabs':                 [ 'error' ], // Stylistic.
+    'no-unused-expressions':   [ 'error' ], // Best practices.
+    'no-use-before-define':    [ 'error' ], // Variables.
+    'no-warning-comments':     [ 'warn' ], // Documentation.
+    'object-property-newline': [ 'error' ], // Stylistic.
+    'require-jsdoc':           [ 'warn' ], // Documentation.
+
+    'sort-keys': [ // Stylistic.
+      'error',
+      'asc',
+      {
+        caseSensitive: false,
+        natural:       true
+      }
+    ],
+
+    'strict': [ // Best practices.
+      'error',
+      'safe'
+    ],
+
+    'valid-jsdoc': [ 'warn' ] // Documentation.
 
   } // Rules.
 }; // Module.exports
