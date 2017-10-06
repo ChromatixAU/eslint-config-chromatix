@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help: http://keepachangelog.com/
 [Unreleased changes]
 
+## [0.0.4] - 2017-10-06
+
+- Fixes eslint and eslint-config-wordpress being defined as devDependencies.
+
 ## [0.0.3] - 2017-10-06
 
 - Adds tests, including npm scripts & CI config.
