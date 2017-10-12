@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help: http://keepachangelog.com/
 [Unreleased changes]
 
+## [0.0.6] - 2017-10-13
+
+- Changes a number of small documentation issues
+- Fixes linting config to ignore coverage reports
+
 ## [0.0.5] - 2017-10-12
 
 - Changes npm to yarn as preferred package manager.
