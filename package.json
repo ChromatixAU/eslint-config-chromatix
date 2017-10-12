@@ -1,6 +1,6 @@
 {
   "name": "@chromatix/eslint-config-chromatix",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "homepage": "https://github.com/ChromatixAU/eslint-config-chromatix#readme",
   "author": "Tim Malone <tim.malone@chromatix.com.au>",
@@ -18,7 +18,9 @@
     "test": "jest --verbose --coverage"
   },
   "jest": {
-    "testMatch": [ "**/tests/**/*.js" ]
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
   },
   "keywords": [
     "eslint",
