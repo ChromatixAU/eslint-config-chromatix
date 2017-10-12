@@ -30,10 +30,10 @@ Add this to your `.eslintrc.js` file:
 
 Then:
 * Using globally?<br />
-  Run `eslint **/*.js`.
+  Run `eslint **/*.js *.js`.
 
 * Using locally?<br />
-  Add `"lint:js": "eslint **/*.js"` to your `package.json`'s `"scripts"` section, then run `npm run lint:js`
+  Add `"lint:js": "eslint **/*.js *.js"` to your `package.json`'s `"scripts"` section, then run `npm run lint:js`
 
 ## License
 
