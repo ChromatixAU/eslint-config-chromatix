@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help: http://keepachangelog.com/
 [Unreleased changes]
 
+## [0.0.5] - 2017-10-12
+
+- Changes npm to yarn as preferred package manager.
+- Changes Jest config to include coverage reports and find tests in tests/ folder.
+
 ## [0.0.4] - 2017-10-06
 
 - Fixes eslint and eslint-config-wordpress being defined as devDependencies.
