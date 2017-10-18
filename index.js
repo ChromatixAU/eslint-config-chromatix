@@ -27,7 +27,7 @@ module.exports = {
     //'no-var':       [ 'error' ],
     //'prefer-const': [ 'error' ],
     //
-    // @see https://www.npmjs.com/package/eslint-plugin-dollar-sign
+    // @see https://yarnpkg.com/en/package/eslint-plugin-dollar-sign
     //'dollar-sign/dollar-sign': [2, 'ignoreProperties'],
 
     // Rule categories:

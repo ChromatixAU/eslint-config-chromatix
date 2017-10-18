@@ -10,11 +10,11 @@ Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-C
 
 Install globally to use on any project:
 
-    npm install --global @chromatix/eslint-config-chromatix
+    yarn global add @chromatix/eslint-config-chromatix
 
 Install locally to one project:
 
-    npm install --save-dev @chromatix/eslint-config-chromatix
+    yarn add --dev @chromatix/eslint-config-chromatix
 
 You'll also need to have [ESLint](https://eslint.org/) installed in the same manner.
 
@@ -29,11 +29,11 @@ Add this to your `.eslintrc.js` file:
     };
 
 Then:
-* Using globally?<br />
+* Using globally?  
   Run `eslint **/*.js *.js`.
 
-* Using locally?<br />
-  Add `"lint:js": "eslint **/*.js *.js"` to your `package.json`'s `"scripts"` section, then run `npm run lint:js`
+* Using locally?  
+  Add `"lint:js": "eslint **/*.js *.js"` to your `package.json`'s `"scripts"` section, then run `yarn lint:js`
 
 ## License
 
