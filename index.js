@@ -112,7 +112,7 @@ module.exports = {
     ],
 
     'key-spacing': [ // Stylistic.
-      'error',
+      'warn',
       {
         'align': {
           afterColon:  true,
