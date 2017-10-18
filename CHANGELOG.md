@@ -5,7 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
-## [0.0.7] - 2017-10-13
+## [0.0.8] - 2017-10-18
+
+- Changes the key-spacing rule to warn level only.
+
+## [0.0.7] - 2017-10-18
 
 - Changes the no-mixed-requires rule to still allow function calls.
 - Changes README to use yarn install commands rather than npm.
@@ -37,7 +41,8 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.7...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.4...v0.0.5
