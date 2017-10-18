@@ -193,9 +193,16 @@ module.exports = {
     'no-lonely-if':          [ 'error' ], // Stylistic.
     'no-loop-func':          [ 'error' ], // Best practices.
     'no-magic-numbers':      [ 'error' ], // Best practices.
-    'no-mixed-requires':     [ 'error' ], // Node safety.
-    'no-multi-spaces':       [ 'error' ], // Stylistic.
-    'no-multi-str':          [ 'error' ], // Stylistic.
+
+    'no-mixed-requires': [ // Node safety.
+      'error',
+      {
+        'allowCall': true
+      }
+    ],
+
+    'no-multi-spaces': [ 'error' ], // Stylistic.
+    'no-multi-str':    [ 'error' ], // Stylistic.
 
     'no-multiple-empty-lines': [ // Stylistic.
       'error',
