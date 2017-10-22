@@ -228,15 +228,6 @@ module.exports = {
     'object-property-newline': [ 'error' ], // Stylistic.
     'require-jsdoc':           [ 'warn' ], // Documentation.
 
-    'sort-keys': [ // Stylistic.
-      'error',
-      'asc',
-      {
-        caseSensitive: false,
-        natural:       true
-      }
-    ],
-
     'strict': [ // Best practices.
       'error',
       'safe'
