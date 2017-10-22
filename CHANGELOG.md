@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.9] - 2017-10-23
+
+- Removes the key sorting requirement, as it can cause more harm than good.
+
 ## [0.0.8] - 2017-10-18
 
 - Changes the key-spacing rule to warn level only.
