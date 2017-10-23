@@ -89,7 +89,7 @@ module.exports = {
     'id-length': [ // Variables.
       'error',
       {
-        max: 25,
+        max: 30,
         min: 2
       }
     ],
