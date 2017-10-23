@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.10] - 2017-10-23
+
+- Extends the id-length max requirement to 30, in an attempt to avoid needlessly penalising well-explained variable names
+
 ## [0.0.9] - 2017-10-23
 
 - Removes the key sorting requirement, as it can cause more harm than good.
