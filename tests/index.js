@@ -14,9 +14,6 @@ const ONE_ENTRY = 1;
 
 test( 'Config exists and exports an object', () => {
   expect( isPlainObj( config ) ).toBe( true );
-  expect( Array.isArray( config.extends ) ).toBe( true );
-  expect( isPlainObj( config.env ) ).toBe( true );
-  expect( isPlainObj( config.rules ) ).toBe( true );
 });
 
 test( 'Config extends at least one other config', () => {
