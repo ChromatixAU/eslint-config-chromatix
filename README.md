@@ -30,10 +30,15 @@ Add this to your `.eslintrc.js` file:
 
 Then:
 * Using globally?  
-  Run `eslint **/*.js *.js`.
+  Run `eslint "**/*.js"`.
 
 * Using locally?  
-  Add `"lint:js": "eslint **/*.js *.js"` to your `package.json`'s `"scripts"` section, then run `yarn lint:js`
+  Add `"lint:js": "eslint \"**/*.js\""` to your `package.json`'s `"scripts"` section, then run `yarn lint:js`
+
+## See also
+
+* [stylelint-config-chromatix](https://github.com/ChromatixAU/stylelint-config-chromatix)
+* [phpcs-config-chromatix](https://github.com/ChromatixAU/phpcs-config-chromatix)
 
 ## License
 
