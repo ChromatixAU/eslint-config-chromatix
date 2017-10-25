@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.11] - 2017-10-25
+
+- Loosens the max-params requirement to 4, as 3 can be difficult to achieve in some situations.
+- Documentation and Travis configuration updates
+- Slight improvement to tests
+
 ## [0.0.10] - 2017-10-23
 
 - Extends the id-length max requirement to 30, in an attempt to avoid needlessly penalising well-explained variable names
@@ -49,7 +55,10 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.8...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.11...HEAD
+[0.0.11]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.10...v0.0.11
+[0.0.10]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.9...v0.0.10
+[0.0.9]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.5...v0.0.6
