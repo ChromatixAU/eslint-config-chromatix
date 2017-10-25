@@ -167,7 +167,7 @@ module.exports = {
     'max-params': [ // Best practices.
       'error',
       {
-        max: 3
+        max: 4
       }
     ],
 
