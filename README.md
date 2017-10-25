@@ -38,7 +38,7 @@ Then:
 ### Additional Tips
 
 * Outputting code coverage reports with Jest? Add `--ignore-pattern coverage/` to your `eslint` command.
-* Want ESLint to list the filenames it is linting, even if everything passes? Add `set DEBUG=eslint:cli-engine && ` _before_ your `eslint` command.
+* Want ESLint to list the filenames it is linting, even if everything passes? Add [cross-env](https://yarnpkg.com/en/package/cross-env) as a dev dependency and then add `cross-env DEBUG=eslint:cli-engine ` _before_ your `eslint` command.
 
 ## See also
 
