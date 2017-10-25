@@ -35,6 +35,11 @@ Then:
 * Using locally?  
   Add `"lint:js": "eslint \"**/*.js\""` to your `package.json`'s `"scripts"` section, then run `yarn lint:js`
 
+### Additional Tips
+
+* Outputting code coverage reports with Jest? Add `--ignore-pattern coverage/` to your `eslint` command.
+* Want ESLint to list the filenames it is linting, even if everything passes? Add `set DEBUG=eslint:cli-engine && ` _before_ your `eslint` command.
+
 ## See also
 
 * [stylelint-config-chromatix](https://github.com/ChromatixAU/stylelint-config-chromatix)
