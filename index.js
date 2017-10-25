@@ -1,3 +1,9 @@
+/**
+ * Main configuration for ESLint shareable configuration eslint-config-chromatix.
+ *
+ * @author Tim Malone <tim.malone@chromatix.com.au>
+ */
+
 'use strict';
 
 const INDENTATION_SPACES = 2;

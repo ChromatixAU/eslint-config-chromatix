@@ -1,5 +1,9 @@
-
-// @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/95cd70536/__tests__/index.js
+/**
+ * Simple tests for eslint-config-chromatix.
+ * Inspired by tests on eslint-config-wordpress.
+ *
+ * @author Tim Malone <tim.malone@chromatix.com.au>.
+ */
 
 'use strict';
 
