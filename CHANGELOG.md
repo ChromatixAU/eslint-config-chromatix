@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.12] - 2017-10-26
+
+- Documentation and lint config update to show paths of all linted filenames
+- Minor fix to duplicated test expectations introduced in v0.0.11
+
 ## [0.0.11] - 2017-10-25
 
 - Loosens the max-params requirement to 4, as 3 can be difficult to achieve in some situations.
