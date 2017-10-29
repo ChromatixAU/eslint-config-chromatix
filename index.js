@@ -18,14 +18,18 @@ module.exports = {
     node:    true
   },
 
-  // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
+  // @see https://www.npmjs.com/package/eslint-plugin-jest
   // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
   extends: [
+    'plugin:jest/recommended',
     'eslint:recommended',
     'wordpress'
   ],
 
+  plugins: [ 'jest' ],
+
+  // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
 
     // Coming soon.

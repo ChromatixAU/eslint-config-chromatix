@@ -31,7 +31,8 @@
   ],
   "dependencies": {
     "eslint": "^4.8.0",
-    "eslint-config-wordpress": "^2.0.0"
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin-jest": "^21.2.0"
   },
   "devDependencies": {
     "cross-env": "^5.1.0",
