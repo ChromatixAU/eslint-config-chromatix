@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.13] - 2017-10-29
+
+- Adds basic Jest linting rules
+
 ## [0.0.12] - 2017-10-26
 
 - Documentation and lint config update to show paths of all linted filenames
@@ -60,7 +64,9 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.11...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.13...HEAD
+[0.0.13]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.12...v0.0.13
+[0.0.12]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.11...v0.0.12
 [0.0.11]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/ChromatixAU/eslint-config-chromatix/compare/v0.0.8...v0.0.9
