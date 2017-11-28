@@ -226,7 +226,7 @@ module.exports = {
     'no-new-object':           [ 'error' ], // Stylistic.
     'no-param-reassign':       [ 'error' ], // Best practices.
     'no-path-concat':          [ 'error' ], // Node safety.
-    'no-plusplus':             [ 'error' ], // Best practices.
+    'no-plusplus':             [ 'off' ], // Only should be on if not using semicolons
     'no-process-env':          [ 'error' ], // Node safety.
     'no-process-exit':         [ 'error' ], // Node safety.
     'no-return-assign':        [ 'error' ], // Best practices.
