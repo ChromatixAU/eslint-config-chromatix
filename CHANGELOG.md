@@ -1,9 +1,13 @@
 # Change Log
 
-All notable changes to this project will be documented in this file  
-This project adheres to [Semantic Versioning](http://semver.org/)  
+All notable changes to this project will be documented in this file
+This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
+
+## [0.0.14] - 2017-10-29
+
+- Removed no-plusplus rule as we are using semicolons
 
 ## [0.0.13] - 2017-10-29
 
