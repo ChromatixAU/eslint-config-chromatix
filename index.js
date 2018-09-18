@@ -188,7 +188,7 @@ module.exports = {
     'max-statements': [ // Best practices.
       'error',
       {
-        max: 15
+        max: 20
       }
     ],
 
@@ -248,6 +248,20 @@ module.exports = {
     ],
 
     'valid-jsdoc': [ 'warn' ], // Documentation.
+
+    'comma-dangle': [
+      'error',
+      'only-multiline',
+    ],
+    'no-trailing-spaces': [
+      'warn',
+      {
+        'skipBlankLines': true,
+        'ignoreComments': true
+      }
+    ],
+    'yoda':   0,
+    'quotes': 0,
 
   } // Rules.
 }; // Module.exports
