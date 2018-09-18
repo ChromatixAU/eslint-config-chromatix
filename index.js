@@ -18,6 +18,10 @@ module.exports = {
     node:    true
   },
 
+  parserOptions: {
+    ecmaVersion: 8
+  },
+
   // @see https://www.npmjs.com/package/eslint-plugin-jest
   // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
@@ -184,7 +188,7 @@ module.exports = {
     'max-statements': [ // Best practices.
       'error',
       {
-        max: 15
+        max: 20
       }
     ],
 
@@ -243,7 +247,21 @@ module.exports = {
       'safe'
     ],
 
-    'valid-jsdoc': [ 'warn' ] // Documentation.
+    'valid-jsdoc': [ 'warn' ], // Documentation.
+
+    'comma-dangle': [
+      'error',
+      'only-multiline',
+    ],
+    'no-trailing-spaces': [
+      'warn',
+      {
+        'skipBlankLines': true,
+        'ignoreComments': true
+      }
+    ],
+    'yoda':   0,
+    'quotes': 0,
 
   } // Rules.
 }; // Module.exports
