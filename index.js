@@ -18,6 +18,10 @@ module.exports = {
     node:    true
   },
 
+  parserOptions: {
+    ecmaVersion: 8
+  },
+
   // @see https://www.npmjs.com/package/eslint-plugin-jest
   // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
@@ -243,7 +247,7 @@ module.exports = {
       'safe'
     ],
 
-    'valid-jsdoc': [ 'warn' ] // Documentation.
+    'valid-jsdoc': [ 'warn' ], // Documentation.
 
   } // Rules.
 }; // Module.exports
