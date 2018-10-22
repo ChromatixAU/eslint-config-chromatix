@@ -19,7 +19,8 @@ module.exports = {
   },
 
   parserOptions: {
-    ecmaVersion: 8
+    ecmaVersion: 8,
+    "sourceType": "module",
   },
 
   // @see https://www.npmjs.com/package/eslint-plugin-jest
