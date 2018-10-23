@@ -4,8 +4,6 @@
  * @author Tim Malone <tim.malone@chromatix.com.au>
  */
 
-'use strict';
-
 const INDENTATION_SPACES = 2;
 
 module.exports = {
@@ -20,7 +18,7 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 8,
-    "sourceType": "module",
+    sourceType:  "module",
   },
 
   // @see https://www.npmjs.com/package/eslint-plugin-jest

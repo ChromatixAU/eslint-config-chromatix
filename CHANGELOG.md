@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.0.16] - 2018-10-24
+
+- Updated with sourcetype modules
+
 ## [0.0.14] - 2017-10-29
 
 - Removed no-plusplus rule as we are using semicolons
