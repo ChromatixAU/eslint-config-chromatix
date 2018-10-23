@@ -5,8 +5,6 @@
  * @author Tim Malone <tim.malone@chromatix.com.au>.
  */
 
-'use strict';
-
 const isPlainObj = require( 'is-plain-obj' );
 const config = require( '../index.js' );
 
