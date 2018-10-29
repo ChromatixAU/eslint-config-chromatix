@@ -205,7 +205,7 @@ module.exports = {
     'no-lone-blocks':        [ 'error' ], // Stylistic.
     'no-lonely-if':          [ 'error' ], // Stylistic.
     'no-loop-func':          [ 'error' ], // Best practices.
-    'no-magic-numbers':      [ 'error' ], // Best practices.
+    'no-magic-numbers':      0,
 
     'no-mixed-requires': [ // Node safety.
       'error',
