@@ -99,11 +99,10 @@ module.exports = {
     'key-spacing': [ // Stylistic.
       'warn',
       {
-        'align': {
-          afterColon:  null,
-          beforeColon: null,
-          on:          'value'
-        }
+        'align': null,
+        'beforeColon': false,
+        'afterColon': true,
+        'mode': 'minimum'
       }
     ],
 
