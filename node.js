@@ -10,10 +10,10 @@ module.exports = {
 
   env: {
     browser: false,
-    es6:     true,
-    jest:    true,
-    jquery:  false,
-    node:    true,
+    es6: true,
+    jest: true,
+    jquery: false,
+    node:  true,
     "jest/globals": true,
   },
 
@@ -100,7 +100,7 @@ module.exports = {
       'warn',
       {
         'align': {
-          afterColon:  true,
+          afterColon:  false,
           beforeColon: false,
           on:          'value'
         }
