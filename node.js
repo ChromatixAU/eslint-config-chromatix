@@ -100,8 +100,8 @@ module.exports = {
       'warn',
       {
         'align': {
-          afterColon:  false,
-          beforeColon: false,
+          afterColon:  null,
+          beforeColon: null,
           on:          'value'
         }
       }
