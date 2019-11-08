@@ -1,5 +1,5 @@
 /**
- * Main configuration for ESLint shareable configuration eslint-config-chromatix.
+ * Node configuration for ESLint shareable configuration eslint-config-chromatix.
  *
  * @author Jay Oswald <j@chromatix.com.au>
  */
