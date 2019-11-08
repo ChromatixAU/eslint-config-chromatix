@@ -28,7 +28,7 @@ You'll also need to have [ESLint](https://eslint.org/) installed in the same man
 
 ## Usage
 
-#### Javascript
+#### Frontend / WordPress Javascript
 Add this to your `.eslintrc.js` file:
 
     module.exports = {
