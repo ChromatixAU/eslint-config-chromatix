@@ -1,7 +1,7 @@
 /**
  * Main configuration for ESLint shareable configuration eslint-config-chromatix.
  *
- * @author Tim Malone <tim.malone@chromatix.com.au>
+ * @author Jay Oswald <j@chromatix.com.au>
  */
 
 const INDENTATION_SPACES = 2;
@@ -9,11 +9,12 @@ const INDENTATION_SPACES = 2;
 module.exports = {
 
   env: {
-    browser: true,
+    browser: false,
     es6:     true,
     jest:    true,
-    jquery:  true,
-    node:    false
+    jquery:  false,
+    node:    true,
+    "jest/globals": true,
   },
 
   parserOptions: {
@@ -27,7 +28,6 @@ module.exports = {
   extends: [
     'plugin:jest/recommended',
     'eslint:recommended',
-    'wordpress'
   ],
 
   plugins: [ 'jest' ],
@@ -99,14 +99,6 @@ module.exports = {
     'guard-for-in':        [ 'error' ], // Best practices.
     'handle-callback-err': [ 'error' ], // Node safety.
 
-    'id-length': [ // Variables.
-      'error',
-      {
-        max: 30,
-        min: 2
-      }
-    ],
-
     // Indentation.
     // @see https://eslint.org/docs/rules/indent
     'indent': [
@@ -155,7 +147,7 @@ module.exports = {
     'max-len': [ // Stylistic.
       'error',
       {
-        code:       100,
+        code:       140,
         ignoreUrls: true,
         tabWidth:   2
       }
@@ -164,9 +156,9 @@ module.exports = {
     'max-lines': [ // Stylistic.
       'error',
       {
-        max:            800,
-        skipBlankLines: false,
-        skipComments:   false
+        max:            1000,
+        skipBlankLines: true,
+        skipComments:   true
       }
     ],
 
@@ -230,7 +222,6 @@ module.exports = {
     'no-param-reassign':       [ 'error' ], // Best practices.
     'no-path-concat':          [ 'error' ], // Node safety.
     'no-plusplus':             [ 'off' ], // Only should be on if not using semicolons
-    'no-process-env':          [ 'error' ], // Node safety.
     'no-process-exit':         [ 'error' ], // Node safety.
     'no-return-assign':        [ 'error' ], // Best practices.
     'no-self-compare':         [ 'error' ], // Best practices.
