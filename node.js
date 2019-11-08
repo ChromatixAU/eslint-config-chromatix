@@ -35,26 +35,6 @@ module.exports = {
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
 
-    // Coming soon.
-    //
-    //'no-var':       [ 'error' ],
-    //'prefer-const': [ 'error' ],
-    //
-    // @see https://yarnpkg.com/en/package/eslint-plugin-dollar-sign
-    //'dollar-sign/dollar-sign': [2, 'ignoreProperties'],
-
-    // Rule categories:
-    // - Best practices (and quality code).
-    // - Documentation.
-    // - Indentation.
-    // - Handled elsewhere.
-    // - Node safety.
-    // - Purely helpful.
-    // - Security.
-    // - Stylistic.
-    // - UX.
-    // - Variables.
-
     'array-bracket-newline': [ // Stylistic.
       'error',
       {
