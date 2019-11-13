@@ -28,6 +28,7 @@ You'll also need to have [ESLint](https://eslint.org/) installed in the same man
 
 ## Usage
 
+#### Frontend / WordPress Javascript
 Add this to your `.eslintrc.js` file:
 
     module.exports = {
@@ -35,6 +36,17 @@ Add this to your `.eslintrc.js` file:
         '@chromatix/chromatix'
       ]
     };
+    
+#### Node
+Add this to your `.eslintrc.js` file:
+
+    module.exports = {
+      'extends': [
+        '@chromatix/chromatix/node'
+      ]
+    };
+    
+
 
 Then:
 * Using globally?  

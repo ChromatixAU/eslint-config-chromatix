@@ -1,7 +1,7 @@
 /**
- * Main configuration for ESLint shareable configuration eslint-config-chromatix.
+ * Node configuration for ESLint shareable configuration eslint-config-chromatix.
  *
- * @author Tim Malone <tim.malone@chromatix.com.au>
+ * @author Jay Oswald <j@chromatix.com.au>
  */
 
 const INDENTATION_SPACES = 2;
@@ -9,11 +9,12 @@ const INDENTATION_SPACES = 2;
 module.exports = {
 
   env: {
-    browser: true,
-    es6:     true,
-    jest:    true,
-    jquery:  true,
-    node:    false
+    browser: false,
+    es6: true,
+    jest: true,
+    jquery: false,
+    node:  true,
+    "jest/globals": true,
   },
 
   parserOptions: {
@@ -27,33 +28,12 @@ module.exports = {
   extends: [
     'plugin:jest/recommended',
     'eslint:recommended',
-    'wordpress'
   ],
 
   plugins: [ 'jest' ],
 
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
-
-    // Coming soon.
-    //
-    //'no-var':       [ 'error' ],
-    //'prefer-const': [ 'error' ],
-    //
-    // @see https://yarnpkg.com/en/package/eslint-plugin-dollar-sign
-    //'dollar-sign/dollar-sign': [2, 'ignoreProperties'],
-
-    // Rule categories:
-    // - Best practices (and quality code).
-    // - Documentation.
-    // - Indentation.
-    // - Handled elsewhere.
-    // - Node safety.
-    // - Purely helpful.
-    // - Security.
-    // - Stylistic.
-    // - UX.
-    // - Variables.
 
     'array-bracket-newline': [ // Stylistic.
       'error',
@@ -99,14 +79,6 @@ module.exports = {
     'guard-for-in':        [ 'error' ], // Best practices.
     'handle-callback-err': [ 'error' ], // Node safety.
 
-    'id-length': [ // Variables.
-      'error',
-      {
-        max: 30,
-        min: 2
-      }
-    ],
-
     // Indentation.
     // @see https://eslint.org/docs/rules/indent
     'indent': [
@@ -127,11 +99,9 @@ module.exports = {
     'key-spacing': [ // Stylistic.
       'warn',
       {
-        'align': {
-          afterColon:  true,
-          beforeColon: false,
-          on:          'value'
-        }
+        'beforeColon': false,
+        'afterColon': true,
+        'mode': 'minimum'
       }
     ],
 
@@ -155,7 +125,7 @@ module.exports = {
     'max-len': [ // Stylistic.
       'error',
       {
-        code:       100,
+        code:       140,
         ignoreUrls: true,
         tabWidth:   2
       }
@@ -164,9 +134,9 @@ module.exports = {
     'max-lines': [ // Stylistic.
       'error',
       {
-        max:            800,
-        skipBlankLines: false,
-        skipComments:   false
+        max:            1000,
+        skipBlankLines: true,
+        skipComments:   true
       }
     ],
 
@@ -230,7 +200,6 @@ module.exports = {
     'no-param-reassign':       [ 'error' ], // Best practices.
     'no-path-concat':          [ 'error' ], // Node safety.
     'no-plusplus':             [ 'off' ], // Only should be on if not using semicolons
-    'no-process-env':          [ 'error' ], // Node safety.
     'no-process-exit':         [ 'error' ], // Node safety.
     'no-return-assign':        [ 'error' ], // Best practices.
     'no-self-compare':         [ 'error' ], // Best practices.
