@@ -15,6 +15,6 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: lint
-        run: find . -name "*.js" -not -path "./node_modules/*" -not -path "./.eslintrc.js" -not -path "./.stylelintrc.js" -exec yarn eslint {} +
+        run: yarn lint
       - name: Unit Tests
         run: yarn test
