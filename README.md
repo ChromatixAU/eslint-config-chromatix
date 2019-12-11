@@ -42,6 +42,14 @@ Add this to your `.eslintrc.js` file:
       ]
     };
     
+#### Vue/Nuxt
+Add this to your `.eslintrc.js` file:
+
+    module.exports = {
+      'extends': [
+        '@chromatix/eslint-config-chromatix/vue'
+      ]
+    };
 
 
 Then:
