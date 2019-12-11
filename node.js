@@ -35,10 +35,7 @@ module.exports = {
 
     'array-bracket-newline': [ // Stylistic.
       'error',
-      {
-        "multiline": true,
-        "minItems": 1
-      }
+      'consistent'
     ],
 
     'array-callback-return': [ 'warn' ], // Purely helpful.
