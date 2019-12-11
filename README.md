@@ -8,11 +8,7 @@ Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-C
 
 ## Publishing to npm/yarn
 
-**NOTE: This package is available on npm and once a Pull request has been merged to master the master branch needs to be published to npm/yarn to reflect any changes or updates.**
-
-Consult LastPass or Julian for where to find login details for https://www.npmjs.com
-
-Details for how to publish the config to npm can be found here: https://yarnpkg.com/lang/en/docs/publishing-a-package/
+This package auto-deploys to NPM on the master branch, any changes should be Pull Requests, There will need to be a version bump for a publish to be successful
 
 ## Installation
 
@@ -42,10 +38,18 @@ Add this to your `.eslintrc.js` file:
 
     module.exports = {
       'extends': [
-        '@chromatix/chromatix/node'
+        '@chromatix/eslint-config-chromatix/node'
       ]
     };
     
+#### Vue/Nuxt
+Add this to your `.eslintrc.js` file:
+
+    module.exports = {
+      'extends': [
+        '@chromatix/eslint-config-chromatix/vue'
+      ]
+    };
 
 
 Then:
