@@ -24,7 +24,7 @@ module.exports = {
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
   extends: [
     'eslint:recommended',
-    '@nuxtjs'
+    'plugin:nuxt/recommended'
   ],
 
   plugins: [
