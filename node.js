@@ -37,7 +37,7 @@ module.exports = {
       'error',
       {
         "multiline": true,
-        "minItems": 2
+        "minItems": 1
       }
     ],
 
