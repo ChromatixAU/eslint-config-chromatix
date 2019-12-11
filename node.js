@@ -27,7 +27,7 @@ module.exports = {
   ],
 
   plugins: [
-    
+
   ],
 
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
@@ -36,7 +36,8 @@ module.exports = {
     'array-bracket-newline': [ // Stylistic.
       'error',
       {
-        minItems: 0
+        "multiline": true,
+        "minItems": 2
       }
     ],
 
