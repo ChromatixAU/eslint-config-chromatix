@@ -9,7 +9,7 @@ const INDENTATION_SPACES = 2;
 module.exports = {
 
   env: {
-    browser: false,
+    browser: true,
     es6: true,
     jquery: false,
     node:  true,

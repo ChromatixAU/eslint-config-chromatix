@@ -1,7 +1,7 @@
 
 module.exports = {
   extends: [
-    './vue.js',
+    './node.js',
   ],
   globals: {
     test: true,
