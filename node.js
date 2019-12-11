@@ -11,10 +11,8 @@ module.exports = {
   env: {
     browser: false,
     es6: true,
-    jest: true,
     jquery: false,
     node:  true,
-    "jest/globals": true,
   },
 
   parserOptions: {
@@ -22,15 +20,13 @@ module.exports = {
     sourceType:  "module",
   },
 
-  // @see https://www.npmjs.com/package/eslint-plugin-jest
   // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
   extends: [
-    'plugin:jest/recommended',
     'eslint:recommended',
   ],
 
-  plugins: [ 'jest' ],
+  plugins: [  ],
 
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
