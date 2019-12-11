@@ -125,7 +125,7 @@ module.exports = {
     'max-depth': [ // Best practices.
       'error',
       {
-        max: 3
+        max: 6
       }
     ],
 
@@ -211,7 +211,12 @@ module.exports = {
     'no-return-assign':        [ 'error' ], // Best practices.
     'no-self-compare':         [ 'error' ], // Best practices.
     'no-tabs':                 [ 'error' ], // Stylistic.
-    'no-unused-expressions':   [ 'error' ], // Best practices.
+    'no-unused-expressions':   [
+      'error',
+      {
+        allowTernary: true
+      }
+    ], // Best practices.
     'no-use-before-define':    [ 'error' ], // Variables.
     'no-warning-comments':     [ 'warn' ], // Documentation.
     'object-property-newline': [ 'error' ], // Stylistic.
