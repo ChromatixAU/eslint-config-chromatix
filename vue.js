@@ -1,5 +1,5 @@
 /**
- * Node configuration for ESLint shareable configuration eslint-config-chromatix.
+ * Vue configuration for ESLint shareable configuration eslint-config-chromatix.
  *
  * @author Jay Oswald <j@chromatix.com.au>
  */
@@ -17,13 +17,14 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 8,
-    sourceType:  "module",
+    sourceType: "module",
   },
 
   // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
   // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
   extends: [
     'eslint:recommended',
+    '@nuxtjs'
   ],
 
   plugins: [
@@ -33,9 +34,19 @@ module.exports = {
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
 
+    semi: [
+      'warn',
+      'always',
+    ],
+
     'array-bracket-newline': [ // Stylistic.
       'error',
       'consistent'
+    ],
+
+    'array-bracket-spacing': [
+      'warn',
+      'always'
     ],
 
     'array-callback-return': [ 'warn' ], // Purely helpful.
@@ -55,7 +66,7 @@ module.exports = {
       }
     ],
 
-    'complexity': [ // Best practices.
+    complexity: [ // Best practices.
       'error',
       {
         max: 20
@@ -67,7 +78,7 @@ module.exports = {
       'property'
     ],
 
-    'eqeqeq': [ // Best practices.
+    eqeqeq: [ // Best practices.
       'error',
       'always'
     ],
@@ -77,7 +88,7 @@ module.exports = {
 
     // Indentation.
     // @see https://eslint.org/docs/rules/indent
-    'indent': [
+    indent: [
       'error',
       INDENTATION_SPACES,
       {
@@ -95,9 +106,9 @@ module.exports = {
     'key-spacing': [ // Stylistic.
       'warn',
       {
-        'beforeColon': false,
-        'afterColon': true,
-        'mode': 'minimum'
+        beforeColon: false,
+        afterColon: true,
+        mode: 'minimum'
       }
     ],
 
@@ -176,7 +187,7 @@ module.exports = {
     'no-mixed-requires': [ // Node safety.
       'error',
       {
-        'allowCall': true
+        allowCall: true
       }
     ],
 
@@ -206,7 +217,7 @@ module.exports = {
     'object-property-newline': [ 'error' ], // Stylistic.
     'require-jsdoc':           [ 'warn' ], // Documentation.
 
-    'strict': [ // Best practices.
+    strict: [ // Best practices.
       'error',
       'safe'
     ],
@@ -220,12 +231,12 @@ module.exports = {
     'no-trailing-spaces': [
       'warn',
       {
-        'skipBlankLines': true,
-        'ignoreComments': true
+        skipBlankLines: true,
+        ignoreComments: true
       }
     ],
-    'yoda':   0,
-    'quotes': 0,
+    yoda:   0,
+    quotes: 0,
 
   } // Rules.
 }; // Module.exports
