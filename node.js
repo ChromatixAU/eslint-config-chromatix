@@ -33,6 +33,8 @@ module.exports = {
   // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
   rules: {
 
+    'require-atomic-updates': [ 'warn' ],
+
     'array-bracket-newline': [ // Stylistic.
       'error',
       'consistent'
