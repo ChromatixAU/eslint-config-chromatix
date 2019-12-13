@@ -14,7 +14,8 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: '10.x'
-      - run: yarn
-      - run: yarn publish
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm install
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
