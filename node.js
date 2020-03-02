@@ -153,7 +153,7 @@ module.exports = {
     'max-statements': [ // Best practices.
       'error',
       {
-        max: 20
+        max: 50
       }
     ],
 
@@ -186,7 +186,7 @@ module.exports = {
     'no-multiple-empty-lines': [ // Stylistic.
       'error',
       {
-        max:    1,
+        max:    5,
         maxBOF: 1,
         maxEOF: 1
       }
