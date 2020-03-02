@@ -206,7 +206,7 @@ module.exports = {
     'no-use-before-define':    [ 'error' ], // Variables.
     'no-warning-comments':     [ 'warn' ], // Documentation.
     'object-property-newline': [ 'error' ], // Stylistic.
-    'require-jsdoc':           [ 'warn' ], // Documentation.
+    'require-jsdoc':           [ 'off' ], // Documentation.
 
     'strict': [ // Best practices.
       'error',
