@@ -155,7 +155,7 @@ module.exports = {
     'max-statements': [ // Best practices.
       'error',
       {
-        max: 20
+        max: 50
       }
     ],
 
@@ -188,7 +188,7 @@ module.exports = {
     'no-multiple-empty-lines': [ // Stylistic.
       'error',
       {
-        max:    1,
+        max:    5,
         maxBOF: 1,
         maxEOF: 1
       }
@@ -206,7 +206,7 @@ module.exports = {
     'no-use-before-define':    [ 'error' ], // Variables.
     'no-warning-comments':     [ 'warn' ], // Documentation.
     'object-property-newline': [ 'error' ], // Stylistic.
-    'require-jsdoc':           [ 'warn' ], // Documentation.
+    'require-jsdoc':           [ 'off' ], // Documentation.
 
     'strict': [ // Best practices.
       'error',
