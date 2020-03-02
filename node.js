@@ -203,7 +203,14 @@ module.exports = {
     'no-self-compare':         [ 'error' ], // Best practices.
     'no-tabs':                 [ 'error' ], // Stylistic.
     'no-unused-expressions':   [ 'error' ], // Best practices.
-    'no-use-before-define':    [ 'error' ], // Variables.
+    'no-use-before-define':    [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: true,
+      }
+    ], // Variables.
     'no-warning-comments':     [ 'warn' ], // Documentation.
     'object-property-newline': [ 'error' ], // Stylistic.
     'require-jsdoc':           [ 'off' ], // Documentation.
