@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: '10.x'
       - name: Install Dependencies
-        run: yarn add eslint eslint-plugin-jest
+        run: yarn
       - name: lint
-        run: find . -name "*.js" -not -path "./node_modules/*" -not -path "./.eslintrc.js" -not -path "./.stylelintrc.js" -exec yarn eslint {} +
+        run: yarn lint
+      - name: Unit Tests
+        run: yarn test

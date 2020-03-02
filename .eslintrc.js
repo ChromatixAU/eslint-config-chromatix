@@ -1,6 +1,10 @@
 
 module.exports = {
-  'extends': [
+  extends: [
     './node.js',
-  ]
+  ],
+  globals: {
+    test: true,
+    expect: true
+  }
 };
