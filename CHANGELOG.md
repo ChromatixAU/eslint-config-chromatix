@@ -5,7 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
-## [0.3.0] - 2022-11-09
+## [1.0.0] - 2022-11-09
 
 - Update eslint-config-wordpress to @wordpress/eslint-plugin and update recommended reference
 - Update eslint to 8.0.0
