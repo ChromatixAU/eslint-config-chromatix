@@ -1,6 +1,6 @@
 {
   "name": "@chromatix/eslint-config-chromatix",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "homepage": "https://github.com/ChromatixAU/eslint-config-chromatix#readme",
   "author": "Tim Malone <tim.malone@chromatix.com.au>",
@@ -30,14 +30,17 @@
     "javascript"
   ],
   "dependencies": {
-    "eslint": "^6.7.0",
-    "eslint-config-wordpress": "^2.0.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "eslint-plugin-nuxt": "^0.5.0"
+    "@babel/core": "^7.0.0",
+    "@wordpress/eslint-plugin": "^13.5.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-jest": "^27.1.4",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "prettier": "^2.0.0",
+    "typescript": "^2.8.0"
   },
   "devDependencies": {
-    "cross-env": "^5.1.0",
-    "is-plain-obj": "^1.1.0",
-    "jest": "^21.2.1"
+    "cross-env": "^7.0.3",
+    "is-plain-obj": "^4.1.0",
+    "jest": "^29.3.1"
   }
 }
