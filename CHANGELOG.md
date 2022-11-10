@@ -15,7 +15,7 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 - Add prettier peer dependency
 - Add typescript peer dependency
 - Update cross-env to 7.0.3
-- Update is-plain-obj to 4.1.0
+- Replace is-plain-obj with is-plain-object
 - Update jest to 29.3.1
 
 ## [0.0.16] - 2018-10-24
