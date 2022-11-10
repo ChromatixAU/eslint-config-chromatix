@@ -2,6 +2,7 @@
  * Main configuration for ESLint shareable configuration eslint-config-chromatix.
  *
  * @author Tim Malone <tim.malone@chromatix.com.au>
+ * @author Julian Chan <julian.chan@chromatix.com.au>
  */
 
 const INDENTATION_SPACES = 2;
@@ -27,7 +28,7 @@ module.exports = {
   extends: [
     'plugin:jest/recommended',
     'eslint:recommended',
-    'wordpress'
+    'plugin:@wordpress/eslint-plugin/recommended'
   ],
 
   plugins: [ 'jest' ],

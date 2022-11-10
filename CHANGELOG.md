@@ -5,6 +5,19 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [1.0.0] - 2022-11-09
+
+- Update eslint-config-wordpress to @wordpress/eslint-plugin and update recommended reference
+- Update eslint to 8.0.0
+- Add @babel/core peer dependency
+- Update eslint-plugin-jest to 27.1.4
+- Update eslint-plugin-nuxt to 4.0.0
+- Add prettier peer dependency
+- Add typescript peer dependency
+- Update cross-env to 7.0.3
+- Replace is-plain-obj with is-plain-object
+- Update jest to 29.3.1
+
 ## [0.0.16] - 2018-10-24
 
 - Updated with sourcetype modules
