@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: '16.x'
       - name: Install Dependencies
         run: yarn
       - name: lint
