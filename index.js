@@ -262,6 +262,6 @@ module.exports = {
     ],
     'yoda':   0,
     'quotes': 0,
-
+    'prettier/prettier': 0
   } // Rules.
 }; // Module.exports
